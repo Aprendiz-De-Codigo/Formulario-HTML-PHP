@@ -12,22 +12,22 @@
         <img src="img/logo.svg" alt="">
         <div class="input-group">
             <div class="input-container">
-                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="text" name="name" placeholder="Nombre">
                 <i class="fa-solid fa-user"></i>
             </div>
 
             <div class="input-container">
-                <input type="password" name="password" placeholder="Contraseña" required> 
+                <input type="password" name="password" placeholder="Contraseña"> 
                 <i class="fa-solid fa-lock"></i>
             </div>
 
             <div class="input-container">
-                <input type="email" name="email" placeholder="Correo" required>
+                <input type="email" name="email" placeholder="Correo">
                 <i class="fa-solid fa-envelope"></i>
             </div>
 
             <div class="input-container">
-                <input type="tel" name="phone" placeholder="Teléfono" required>
+                <input type="tel" name="phone" placeholder="Teléfono">
                 <i class="fa-solid fa-phone"></i>
             </div>
 
