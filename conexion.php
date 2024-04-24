@@ -1,5 +1,5 @@
 <?php
 
-$conex = mysqli_connect("localhost", "root", "", "formulario");
+$conexion = mysqli_connect("localhost", "root", "", "formulario");
 
 ?>

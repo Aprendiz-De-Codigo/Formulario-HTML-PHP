@@ -1,7 +1,7 @@
 <?php
 
 include("conexion.php");
-if (isset($_POST['send.php'])) {
+if (isset($_POST['register_usuario.php'])) {
 
     if (
         strlen($_POST['name']) >= 1 &&
@@ -15,10 +15,10 @@ if (isset($_POST['send.php'])) {
         $phone = trim($_POST['phone']);
         $fecha = date("d/m/y");
         $consulta = "INSERT INTO datos(nombre, contrasena, email, telefono, fecha)
-                     VALUE ('$name', '$password', '$email', '$phone', '$fecha')";
-        $resultado = mysqli_query($conex, $consulta);
+                     VALUES ('$name', '$password', '$email', '$phone', '$fecha')";
+        $resultado = mysqli_query($conexion, $consulta);
 
-        if($consulta) {
+        if($resultado) {
             ?> 
             <h3 class="success">Tu informacion se a enviado</h3>
             <?php
@@ -26,7 +26,11 @@ if (isset($_POST['send.php'])) {
             ?>
             <h3 class="error">Ocurrio un error</h3>
             <?php
+        } else {
+            ?> 
+            <h3 class="error">Llena todos los campos</h3>
+            <?php
         }
-    } else {?> <h3 class="error">Llena todos los campos</h3><?php}
+    } 
 }
 ?>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <form action="" method="POST" autocomplete="off">
+    <form action="register_usuario.php" method="POST" autocomplete="off">
         <img src="img/logo.svg" alt="">
         <div class="input-group">
             <div class="input-container">
@@ -37,8 +37,6 @@
         </div>
     </form>
         
-    <?php
-        include("send.php");
-    ?>
+    
 </body>
 </html>
